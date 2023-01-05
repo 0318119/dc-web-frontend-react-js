@@ -1,0 +1,381 @@
+// SIDE BAR SCSS START FROM HERE
+.showSideBar {
+    width: 5% !important;
+    transition: all .1s ease;
+    background: white;
+}
+.afterMediumCss{
+    img{
+        display: none;
+    }
+}
+.widthAuto{
+    width: 5% !important;
+}
+.applyCss{
+    justify-content: center !important;
+}
+.activeList {
+    display: block !important;
+    transition: all .1s ease;
+    margin-top: 3px;
+}
+
+.listingHead {
+    display: none;
+}
+
+.dropDownList {
+    display: none !important;
+}
+.applyActiveClassInprogress{
+    font-weight: 700 !important;
+}
+.applyActiveClassCompleted{
+    font-weight: 900 !important;
+}
+.spanTxt{
+    display: none;
+}
+.sideBarCon {
+    width: 15%;
+    position: relative;
+    transition: all 0.1s ease;
+
+    .innerSide {
+     .fixedPosition{
+        position: fixed;
+        padding: 0%;
+        height: 100vh;
+        border-right: 1px solid #adb5bd;
+        width: 13%;
+        background: white;
+        z-index: 9;
+     }
+    }
+
+    .logoBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 0px 20px 0px;
+        height: 80px;
+        background: #f3f3f3;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        a {
+            display: block;
+
+             > img {
+                height: 26px;
+            }
+        }
+        img{
+            height: 20px;
+        }
+
+        .hidelogo {
+            display: none;
+        }
+
+        svg {
+            font-size: 21px;
+            color: #574dfc;
+        }
+    }
+
+    .dashHead {
+        display: flex;
+        align-items: center;
+        margin-top: 17px;
+        justify-content: center;
+        > a{
+            display: flex !important;
+            text-decoration: none;
+        }
+
+        img {
+            margin-right: 6px;
+            color: #574dfc;
+            height: 22px;
+        }
+
+        span {
+            color: #574dfc;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+    .dropDownBox {
+        position: relative;
+        cursor: pointer;
+        width: 69%;
+        margin: 17px auto 0 auto;
+        .iconBox{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            span {
+                color: #574DFC;
+                font-weight: 500;
+                letter-spacing: 0px;
+                font-size: 15px;
+            }
+        }
+
+       .checkIcons{
+            color: #574DFC;
+            height: 13px;
+        }
+       .arrowIcon{
+            color: #574DFC;
+            height: 14px;
+        }
+        .rotateArrow {
+            transform: rotate(92deg);
+            transition: all 0.3s linear;
+        }
+
+        svg.arrowIcon {
+            transition: all 0.3s linear;
+        }
+
+        .dropingLinks {
+            display: none;
+            li{
+                display: flex !important;
+                align-items: center;
+                // margin-top: 9px;
+                span{
+                    a{
+                        text-decoration: none !important;
+                        color: gray;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sideBarFoot {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        .innerArea {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            border-top: 1px solid #adb5bd;
+            cursor: pointer;
+
+            h5 {
+                font-size: 14px;
+                background: #574DFC;
+                color: white;
+                line-height: 0;
+                border-radius: 20px;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            span {
+                font-size: 12px;
+                color: #574DFC;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            img {
+                height: 30px
+            }
+        }
+    }
+}
+
+
+
+$breakpoint-ex-large: 1400px;
+$breakpoint-large: 1200px;
+$breakpoint-medium: 900px;
+
+@media (max-width: $breakpoint-ex-large){
+    .sideBarCon {
+        width: 18%;
+        .innerSide{
+            .fixedPosition{
+                width: 17%;
+             }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-large){
+    .sideBarCon {
+        width: 25%;
+        .innerSide{
+            .fixedPosition{
+                width: 20%;
+             }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-medium){
+    .logoBox {
+        a {
+             > img {
+                height: 22px !important;
+                margin-right: 12px;
+            }
+        }
+        img{
+            height: 16px !important;
+        }
+    }
+    .dashHead {
+        img {
+            height: 19px !important;
+        }
+        span {
+            font-size: 16px !important;
+        }
+    }
+    // .sideBarCon {
+    //     width: 25%;
+    //     .innerSide{
+    //         .fixedPosition{
+    //             width: 20%;
+    //          }
+    //     }
+    // }
+}
+
+@media screen and (max-width: 992px){
+    .dropDownList {
+        display: block !important;
+    }
+    .spanTxt{
+        display: block;
+    }
+    .listingHead {
+        display: block;
+    }
+    .logoBox {
+        .hidelogo {
+            display: block !important;
+        }
+    }
+    .afterMediumCss{
+        position: fixed;
+        left: 20px;
+        top: 26px;
+        z-index: 999;
+        img{
+            display: block;
+            height: 20px;
+        }
+    }
+    .sideBarCon{
+        position: absolute;
+        .innerSide {
+            .fixedPosition{
+                display: none;
+            }
+           }
+    }
+    .showSideBar {
+        width: 25% !important;
+        transition: all 0.1s ease;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .showSideBar {
+        width: 30% !important;
+    }
+    .sideBarFoot {
+        .innerArea {
+            h5 {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 679px){
+    .showSideBar {
+        width: 35% !important;
+    }
+    // .logoBox {
+    //     justify-content: center !important;
+    //     a {
+    //          > img {
+    //             height: 18px !important;
+    //             margin-right: 12px;
+    //         }
+    //     }
+    // }
+    // .dashHead {
+    //     span {
+    //         font-size: 14px !important;
+    //     }
+    // }
+    // .dropDownBox {
+    //     li {
+    //         span {
+    //             font-size: 13px !important;
+    //         }
+    //     }
+
+    //    .checkIcons,.arrowIcon{
+    //         height: 10px !important;
+    //     }
+    //     .dropingLinks {
+    //         li{
+    //             span{
+    //                 a{
+    //                     font-size: 10px !important;
+    //                     line-height: 14px !important;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (max-width: 550px){
+    .showSideBar {
+        width: 40% !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .showSideBar {
+        width: 55% !important;
+    }
+}
+@media screen and (max-width: 380px){
+    .showSideBar {
+        width: 70% !important;
+    }
+}

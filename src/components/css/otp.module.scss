@@ -1,0 +1,109 @@
+.img_user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.otp_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+
+    .logoBox {
+        img {
+            height: 50px;
+            display: block;
+            margin: 50px auto;
+        }
+
+        h4 {
+            font-size: 25px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+    }
+
+    .messageBox {
+        position: relative;
+        h4 {
+            background: #aee3cb;
+            font-weight: 300;
+            font-size: 13px;
+            text-align: start;
+            position: relative;
+            padding: 10px 10px;
+
+            div {
+                display: inline-flex;
+                margin-left: 20px;
+                margin-top: 5px;
+
+                span {
+                    display: inline-block;
+                    font-weight: 500;
+                }
+            }
+        }
+        .submmitBtn {
+            border: none;
+            background: #574DFC;
+            color: white;
+            text-transform: capitalize;
+            width: 100%;
+            padding: 8px 0;
+            margin: 50px auto;
+            border-radius: 5px;
+        }
+    }
+}
+.reSentBtnBox{
+    position: absolute;
+    top: 110px;
+    right: 0;
+    >.reSentBtn{
+        width: 200px;
+        right: 1px;
+        margin-top: 15px;
+        color: gray;
+        background: #8080800a;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    #hideBox{
+        display: none;
+    }
+    #fullWidthBox{
+        max-width: unset !important;
+        flex: unset !important;
+        width: 98%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 481px){
+    .reSentBtnBox{
+        >.reSentBtn{
+            margin-top: 50px;
+        }
+    }
+    .messageBox {
+        .submmitBtn {
+            margin: 95px auto !important;
+        }
+    }
+    .otp_box {
+        .logoBox {
+            img {
+                height: 40px;
+                margin: 70px auto;
+            }
+        }
+    }
+}

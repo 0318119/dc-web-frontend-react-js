@@ -1,0 +1,263 @@
+#showModal {
+  display: flex;
+}
+
+.wholeBoxDetails {
+  display: none;
+  background: rgba(65, 70, 75, 0.5098039216);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 99;
+}
+.wholeBoxDetails .innerBoxModal {
+  background: white;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 60%;
+  overflow: hidden;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent {
+  padding: 0 30px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent h5 {
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #adb5bd;
+  margin: 0;
+  color: #574DFC;
+  font-weight: 600;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt {
+  margin-top: 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+  min-height: 355px;
+  height: 166px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt h4 {
+  color: gray;
+  font-weight: 500;
+  font-size: 25px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt .upperUl {
+  padding: 0 0 0 40px;
+  margin: 0px auto 0 auto !important;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt .upperUl li {
+  font-size: 15px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt .upperUl .innerUl {
+  padding: 0px 0 0px 20px;
+  margin: 8px auto 0 auto !important;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt .upperUl .innerUl li {
+  font-size: 15px;
+  padding: 0 !important;
+  margin: auto !important;
+  list-style-type: disc !important;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt p {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.2392156863);
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt::-webkit-scrollbar {
+  width: 8px;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(86, 77, 252, 0.7450980392);
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .btnBox {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: end;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .btnBox button {
+  border: 2px solid #adb5bd;
+  border-radius: 7px;
+  padding: 4px 30px;
+  color: #adb5bd;
+  background: transparent;
+  color: gray;
+}
+.wholeBoxDetails .innerBoxModal .modalBody .modalContent .btnBox button:focus {
+  outline: none;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.modalLoaderSet {
+  background: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  height: 511px;
+  width: 60%;
+  overflow: hidden;
+}
+.modalLoaderSet .innerDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.modalLoaderSet .innerDiv span.first_loader {
+  width: 10%;
+  display: block;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 20px;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, rgba(221, 221, 221, 0.231372549) 18%, #eeeeee 33%);
+  position: relative;
+}
+.modalLoaderSet .innerDiv span.second_loader {
+  width: 90%;
+  display: block;
+  height: 15px;
+  margin-left: 20px;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  position: relative;
+}
+.modalLoaderSet .innerDiv span.third_loader {
+  width: 85%;
+  display: block;
+  height: 15px;
+  margin-left: 20px;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  position: relative;
+}
+.modalLoaderSet .innerDiv span.fourth_loader {
+  width: 95%;
+  display: block;
+  height: 15px;
+  margin-left: 20px;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .wholeBoxDetails .innerBoxModal {
+    width: 80%;
+  }
+  .modalLoaderSet {
+    width: 80%;
+  }
+}
+@media (max-width: 769px) {
+  .wholeBoxDetails .innerBoxModal .modalBody .modalContent .modalTxt h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .wholeBoxDetails .innerBoxModal {
+    width: 95%;
+  }
+  .modalLoaderSet {
+    width: 95%;
+  }
+  .modalLoaderSet .innerDiv span.first_loader {
+    width: 15%;
+    height: 65px;
+  }
+  .modalLoaderSet .innerDiv span.second_loader {
+    width: 75%;
+  }
+  .modalLoaderSet .innerDiv span.third_loader {
+    width: 60%;
+  }
+  .modalLoaderSet .innerDiv span.fourth_loader {
+    width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .wholeBoxDetails .innerBoxModal .modalBody .modalContent .upperUl .innerUl {
+    padding: 0px 0 0px 0px !important;
+  }
+  .modalLoaderSet .innerDiv span.first_loader {
+    width: 60px !important;
+    height: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .wholeBoxDetails .innerBoxModal .modalBody .modalContent .upperUl {
+    padding: 0 0 0 10px !important;
+  }
+  .wholeBoxDetails .innerBoxModal .modalBody .modalContent .upperUl .innerUl li {
+    font-size: 13px !important;
+  }
+}/*# sourceMappingURL=modal-check-details.module.css.map */

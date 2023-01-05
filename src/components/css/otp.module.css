@@ -1,0 +1,93 @@
+.img_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.otp_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.otp_box .logoBox img {
+  height: 50px;
+  display: block;
+  margin: 50px auto;
+}
+.otp_box .logoBox h4 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.otp_box .messageBox {
+  position: relative;
+}
+.otp_box .messageBox h4 {
+  background: #aee3cb;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: start;
+  position: relative;
+  padding: 10px 10px;
+}
+.otp_box .messageBox h4 div {
+  display: inline-flex;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.otp_box .messageBox h4 div span {
+  display: inline-block;
+  font-weight: 500;
+}
+.otp_box .messageBox .submmitBtn {
+  border: none;
+  background: #574DFC;
+  color: white;
+  text-transform: capitalize;
+  width: 100%;
+  padding: 8px 0;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.reSentBtnBox {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+.reSentBtnBox > .reSentBtn {
+  width: 200px;
+  right: 1px;
+  margin-top: 15px;
+  color: gray;
+  background: rgba(128, 128, 128, 0.0392156863);
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  #hideBox {
+    display: none;
+  }
+  #fullWidthBox {
+    max-width: unset !important;
+    flex: unset !important;
+    width: 98%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 481px) {
+  .reSentBtnBox > .reSentBtn {
+    margin-top: 50px;
+  }
+  .messageBox .submmitBtn {
+    margin: 95px auto !important;
+  }
+  .otp_box .logoBox img {
+    height: 40px;
+    margin: 70px auto;
+  }
+}/*# sourceMappingURL=otp.module.css.map */

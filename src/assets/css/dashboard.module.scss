@@ -1,0 +1,209 @@
+
+
+.dashboard_container{
+    width: 100%;
+    .dashBoardTopBar{
+        border-bottom: 1px solid #ced4da;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        background: white;
+        z-index: 9;
+        h4{
+            padding: 0 0 0 25px;
+        }
+    }
+    .paddingClass{
+        padding: 0 25px;
+        margin: 110px auto 30px auto;
+    }
+    .columnBox{
+        width: 32%;
+        box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+        padding: 10px;
+        margin: 20px auto 0 auto;
+        cursor: pointer;
+        .innerColumnBox{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 15px;
+            justify-content: space-between;
+            .infoBox{
+                display: flex;
+                flex-direction: column;
+                .priceTag{
+                    display: flex;
+                    margin-bottom: 15px;
+                    span:nth-child(1){
+                        color: black;
+                        margin-right: 5px;
+                    }
+                    span:nth-child(2){
+                        color: gray;
+                    }
+                }
+                .check_Heading{
+                    font-size: 22px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+                .detailsTag{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    :hover{
+                        cursor: pointer;
+                        color: #756DFC
+                    }
+                    span{
+                        font-weight: 400;
+                        margin-right: 5px;
+                    }
+                    img{
+                        color: gray;
+                        height: 14px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .iconBox{
+                width: 100px;
+                height: 100px;
+                box-shadow: 2px 3px 10px #80808057;
+                border-radius: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(37, 68, 147, 0.05);
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    .checkIcon{
+                        display: none;
+                        opacity: 0 !important;
+                        transform: all 1 linear;
+                    }
+                    .infoIcon{
+                        opacity: 1;
+                    }
+                }
+                img{
+                    height: 70%;
+                    width: 70%;
+                }
+                .infoIcon{
+                    position: absolute;
+                    opacity: 0;
+                    object-fit: cover;
+                    height: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .columnBox{
+        width: 30% !important;
+        .innerColumnBox{
+            .infoBox{
+                .priceTag{
+                    span{
+                        font-size: 14px;
+                    }
+                }
+                .check_Heading{
+                    font-size: 18px !important;
+                }
+                .detailsTag{
+                    span{
+                        font-size: 14px !important; 
+                    }
+                }
+            }
+            .iconBox{
+                height: 85px !important;
+                width: 85px !important;
+                img{
+                    height: 60% !important;
+                    width: 60% !important;
+                }
+                .infoIcon{
+                        height: 100px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .columnBox{
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 992px){
+    .dashBoardTopBar{
+        h4{
+            padding: 0 0 0 70px !important;
+        }
+    }
+    .paddingClass{
+        padding: 0 0 !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .columnBox{
+        .innerColumnBox{
+            .infoBox{
+                .check_Heading{
+                    font-size: 15px !important;
+                    font-weight: 600 !important;
+                }
+            }
+            .iconBox{
+                height: 70px !important;
+                width: 70px !important;
+                img{
+                    height: 50% !important;
+                    width: 50% !important;
+                }
+                .infoIcon{
+                        height: 80px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 678px){
+    .columnBox{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 320px){
+    .columnBox{
+        .innerColumnBox{
+            .infoBox{
+                .check_Heading{
+                    font-size: 13px !important;
+                }
+            }
+            .iconBox{
+                height: 50px !important;
+                width: 50px !important;
+                img{
+                    height: 40% !important;
+                    width: 40% !important;
+                }
+                .infoIcon{
+                        height: 60px !important;
+                }
+            }
+        }
+    }
+}

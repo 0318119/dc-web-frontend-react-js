@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: clip;
+  caret-color: transparent;
+}
+
+section {
+  overflow-x: clip;
+}
+
+body::-moz-selection {
+  background: #564CFC;
+}
+
+body::selection {
+  background: #564CFC;
+}
+
+p::-moz-selection {
+  background: #564CFC;
+}
+
+p::selection {
+  background: #564CFC;
+}
+
+a::-moz-selection {
+  background: #564CFC;
+}
+
+a::selection {
+  background: #564CFC;
+}
+
+span::-moz-selection {
+  background: #564CFC;
+}
+
+span::selection {
+  background: #564CFC;
+}
+
+ul::-moz-selection {
+  background: #564CFC;
+}
+
+ul::selection {
+  background: #564CFC;
+}
+
+li::-moz-selection {
+  background: #564CFC;
+}
+
+li::selection {
+  background: #564CFC;
+}
+
+pre::-moz-selection {
+  background: #564CFC;
+}
+
+pre::selection {
+  background: #564CFC;
+}
+
+i::-moz-selection {
+  background: #564CFC;
+}
+
+i::selection {
+  background: #564CFC;
+}
+
+b::-moz-selection {
+  background: #564CFC;
+}
+
+b::selection {
+  background: #564CFC;
+}
+
+label::-moz-selection {
+  background: #564CFC;
+}
+
+label::selection {
+  background: #564CFC;
+}
+
+div::-moz-selection {
+  background: #564CFC;
+}
+
+div::selection {
+  background: #564CFC;
+}
+
+h1::-moz-selection {
+  background: #564CFC;
+}
+
+h1::selection {
+  background: #564CFC;
+}
+
+h2::-moz-selection {
+  background: #564CFC;
+}
+
+h2::selection {
+  background: #564CFC;
+}
+
+h3::-moz-selection {
+  background: #564CFC;
+}
+
+h3::selection {
+  background: #564CFC;
+}
+
+h4::-moz-selection {
+  background: #564CFC;
+}
+
+h4::selection {
+  background: #564CFC;
+}
+
+h5::-moz-selection {
+  background: #564CFC;
+}
+
+h5::selection {
+  background: #564CFC;
+}
+
+h6::-moz-selection {
+  background: #564CFC;
+}
+
+h6::selection {
+  background: #564CFC;
+}
+
+input::-moz-selection {
+  background: #564CFC;
+}
+
+input::selection {
+  background: #564CFC;
+}
+
+button::-moz-selection {
+  background: #564CFC;
+}
+
+button::selection {
+  background: #564CFC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+span {
+  display: block;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0%;
+  margin: 0;
+  list-style: none;
+}
+
+input {
+  border: none;
+  caret-color: black;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+.wrapperBox {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  text-transform: capitalize;
+}
+
+.boxSliding {
+  overflow: hidden;
+}
+.boxSliding button.slick-arrow {
+  display: none !important;
+}
+.boxSliding .slick-list .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.setLoaderGlobal {
+  height: 100vh;
+  background: rgba(9, 8, 8, 0.0196078431);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setLoaderGlobalTextLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  background: rgba(210, 210, 210, 0.24);
+  z-index: 20;
+  width: 100%;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+.setLoaderGlobalTextLoader h5 span {
+  background: white;
+  display: block;
+  padding: 20px 50px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  border-radius: 15px;
+}
+
+.eVPPvF {
+  padding-right: 0 !important;
+}
+
+.gKbhqU {
+  justify-content: space-between !important;
+}
+
+.rdt_TableRow {
+  overflow-x: clip !important;
+}
+
+.globalColorClass {
+  color: gray;
+  font-size: 13px;
+}
+
+.pageNotFound {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageNotFound h4 {
+  font-size: 200px;
+  color: #574DFC;
+}
+.pageNotFound h4 p {
+  font-size: 20px !important;
+  text-align: center;
+  color: gray;
+}
+
+.dropdown-content {
+  border: 0 !important;
+}
+.dropdown-content .panel-content .select-panel .search input {
+  background: transparent !important;
+}
+.dropdown-content .panel-content ul.options {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.css-b62m3t-container {
+  z-index: 999 !important;
+}
+.css-b62m3t-container .css-1pahdxg-control .css-319lph-ValueContainer .css-1pndypt-Input {
+  background: white !important;
+}
+.css-b62m3t-container .css-1pahdxg-control .css-319lph-ValueContainer .css-1pndypt-Input input {
+  box-shadow: none !important;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+.dashboard_container {
+  width: 100%;
+}
+.dashboard_container .dashBoardTopBar {
+  border-bottom: 1px solid #ced4da;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 9;
+}
+.dashboard_container .dashBoardTopBar h4 {
+  padding: 0 0 0 25px;
+}
+.dashboard_container .paddingClass {
+  padding: 0 25px;
+  margin: 110px auto 30px auto;
+}
+.dashboard_container .columnBox {
+  width: 32%;
+  box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+}
+.dashboard_container .columnBox .innerColumnBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .priceTag {
+  display: flex;
+  margin-bottom: 15px;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .priceTag span:nth-child(1) {
+  color: black;
+  margin-right: 5px;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .priceTag span:nth-child(2) {
+  color: gray;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .check_Heading {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .detailsTag {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .detailsTag :hover {
+  cursor: pointer;
+  color: #756DFC;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .detailsTag span {
+  font-weight: 400;
+  margin-right: 5px;
+}
+.dashboard_container .columnBox .innerColumnBox .infoBox .detailsTag img {
+  color: gray;
+  height: 14px;
+  margin-left: 5px;
+}
+.dashboard_container .columnBox .innerColumnBox .iconBox {
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 3px 10px rgba(128, 128, 128, 0.3411764706);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(37, 68, 147, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+.dashboard_container .columnBox .innerColumnBox .iconBox:hover .checkIcon {
+  display: none;
+  opacity: 0 !important;
+  transform: all 1 linear;
+}
+.dashboard_container .columnBox .innerColumnBox .iconBox:hover .infoIcon {
+  opacity: 1;
+}
+.dashboard_container .columnBox .innerColumnBox .iconBox img {
+  height: 70%;
+  width: 70%;
+}
+.dashboard_container .columnBox .innerColumnBox .iconBox .infoIcon {
+  position: absolute;
+  opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 130px;
+}
+
+@media screen and (max-width: 1400px) {
+  .columnBox {
+    width: 30% !important;
+  }
+  .columnBox .innerColumnBox .infoBox .priceTag span {
+    font-size: 14px;
+  }
+  .columnBox .innerColumnBox .infoBox .check_Heading {
+    font-size: 18px !important;
+  }
+  .columnBox .innerColumnBox .infoBox .detailsTag span {
+    font-size: 14px !important;
+  }
+  .columnBox .innerColumnBox .iconBox {
+    height: 85px !important;
+    width: 85px !important;
+  }
+  .columnBox .innerColumnBox .iconBox img {
+    height: 60% !important;
+    width: 60% !important;
+  }
+  .columnBox .innerColumnBox .iconBox .infoIcon {
+    height: 100px !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .columnBox {
+    width: 45% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .dashBoardTopBar h4 {
+    padding: 0 0 0 70px !important;
+  }
+  .paddingClass {
+    padding: 0 0 !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .columnBox .innerColumnBox .infoBox .check_Heading {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+  }
+  .columnBox .innerColumnBox .iconBox {
+    height: 70px !important;
+    width: 70px !important;
+  }
+  .columnBox .innerColumnBox .iconBox img {
+    height: 50% !important;
+    width: 50% !important;
+  }
+  .columnBox .innerColumnBox .iconBox .infoIcon {
+    height: 80px !important;
+  }
+}
+@media screen and (max-width: 678px) {
+  .columnBox {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .columnBox .innerColumnBox .infoBox .check_Heading {
+    font-size: 13px !important;
+  }
+  .columnBox .innerColumnBox .iconBox {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .columnBox .innerColumnBox .iconBox img {
+    height: 40% !important;
+    width: 40% !important;
+  }
+  .columnBox .innerColumnBox .iconBox .infoIcon {
+    height: 60px !important;
+  }
+}/*# sourceMappingURL=dashboard.module.css.map */

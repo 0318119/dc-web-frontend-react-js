@@ -1,0 +1,55 @@
+.right_Box {
+  width: 30%;
+  background: #F9F9F9;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 9;
+}
+.right_Box h4 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 80px 0 20px 0px;
+}
+.right_Box p {
+  font-size: 14px;
+}
+.right_Box ul {
+  padding-left: 30px;
+  font-size: 14px;
+}
+.right_Box ul li {
+  list-style: disc;
+}
+
+@media screen and (max-width: 1350px) {
+  .right_Box {
+    width: 25%;
+  }
+  .right_Box h4 {
+    font-size: 22px;
+    padding: 158px 0 20px 0px;
+  }
+}
+@media screen and (max-width: 1202px) {
+  .right_Box {
+    position: relative;
+    width: 100%;
+    padding: 34px;
+    height: auto;
+    z-index: 8;
+  }
+  .right_Box h4 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .right_Box p {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=check-details.module.css.map */

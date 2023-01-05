@@ -1,0 +1,232 @@
+
+// SLICK SLIDER PRE DEFINED STYLE
+
+.login_formBox{
+    .formSliding{
+        background-image: url(../images/BG.svg);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.formPicture{
+    .sliderItem{
+        display: flex !important;
+        flex-direction: column;
+        background: #9893FB;
+        width: 80% !important;
+        // justify-content: center;
+        height: 75vh;
+        margin: auto;
+        border-radius: 30px;
+        .innerItem{
+            display: flex !important;
+             position: relative;
+            h4{
+                color: white;
+                font-weight: 600;
+                font-size: 40px;
+                padding: 20px 0px 3px 39px;
+            }
+            img{
+            position: relative;
+            right: 0%;
+            top: 9%;
+            }
+        }
+        .indicators_box{
+            position: relative;
+            left: 34px;
+            top: -20%;
+            button{
+                margin: auto;
+                border: none;
+                background: transparent;
+                color: white;
+                font-size: 23px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.loginBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 70px;
+
+    .errorMessage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li{
+            font-size: 18px;
+        }
+    }
+    #passwordBox{
+        position: relative;
+        img{
+            position: absolute;
+            top: 34px;
+            height: 20px;
+            right: 17px;
+        }
+    }
+    .formLogo{
+        display: flex;
+        justify-content: center;
+        img{
+            height: 50px;
+            margin: 26px 0;
+        }
+    }
+    .signInBtn{
+        margin-top: 25px !important;
+        width: 96%;
+        margin: 0 auto;
+        background: #574DFC;
+        color: white;
+        border: none;
+        padding: 9px 0;
+    }
+    .redirectLink{
+        display: flex;
+        font-weight: 500;
+        color: #574DFC;
+        justify-content: center;
+        border: 2px solid #adb5bd;
+        padding: 7px 0;
+        width: 96%;
+        margin: 12px auto 0 auto;
+        border-radius: 5px;
+        p{
+            padding: 0%;
+            margin: 0%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
+         span{
+             margin-left: 5px;
+             color: gray;
+             display: inline-block;
+             a{
+                 color: gray !important;
+             }
+         }
+    }
+    .reserved{
+        text-align: center;
+        margin: 85px 0 0 0;
+        color: gray;
+        // text-transform: capitalize;
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+    .flexInline{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+$breakpoint-ex-large: 1360px;
+$breakpoint-large: 1099px;
+$breakpoint-medium: 992px;
+$breakpoint-mobile-one: 480px;
+
+@media (max-width: $breakpoint-ex-large) {
+    .formPicture{
+        .sliderItem{
+            
+            .innerItem{
+                h4{
+                    font-size: 30px !important;
+                }
+                img{
+                    height: 500px;
+                    top: 0%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .sliderItem{
+        height: auto !important;
+        padding: 14px 0px;
+    }
+    .innerItem{
+        img{
+            height: 400px !important;
+        }
+    }
+}
+@media (max-width: $breakpoint-large) {
+    .formPicture{
+        .sliderItem{
+            padding: 14px 0px;
+            .innerItem{
+                img {
+                    height: 324px !important;
+                    top: 18%;
+                }
+            }
+            .indicators_box{
+                top: 0%;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-medium){
+    .formPicture{
+        .sliderItem{
+            .innerItem{
+                h4{
+                    font-size: 25px !important;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px){
+    #hiddenSlider{
+        display: none !important;
+    }
+    #fullWidthForm{
+        max-width: unset !important;
+        flex: unset !important;
+        width: 100% !important;
+    }
+}
+@media (max-width: $breakpoint-mobile-one){
+    .loginBox{
+        height: 100vh;
+        padding: 0 15px;
+    }
+    .loginBox{
+        .reserved{
+            margin: 20px 0 0 0;
+            font-size: 13px;
+        }
+    }
+    .formLogo{
+        img{
+            height: 40px !important;
+            margin: 26px 0;
+        }
+    }
+}

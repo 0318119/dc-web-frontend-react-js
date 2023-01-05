@@ -1,0 +1,191 @@
+.login_formBox .formSliding {
+  background-image: url(../images/BG.svg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formPicture .sliderItem {
+  display: flex !important;
+  flex-direction: column;
+  background: #9893FB;
+  width: 80% !important;
+  height: 75vh;
+  margin: auto;
+  border-radius: 30px;
+}
+.formPicture .sliderItem .innerItem {
+  display: flex !important;
+  position: relative;
+}
+.formPicture .sliderItem .innerItem h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 20px 0px 3px 39px;
+}
+.formPicture .sliderItem .innerItem img {
+  position: relative;
+  right: 0%;
+  top: 9%;
+}
+.formPicture .sliderItem .indicators_box {
+  position: relative;
+  left: 34px;
+  top: -20%;
+}
+.formPicture .sliderItem .indicators_box button {
+  margin: auto;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 23px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.loginBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 70px;
+}
+.loginBox .errorMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginBox .errorMessage li {
+  font-size: 18px;
+}
+.loginBox #passwordBox {
+  position: relative;
+}
+.loginBox #passwordBox img {
+  position: absolute;
+  top: 34px;
+  height: 20px;
+  right: 17px;
+}
+.loginBox .formLogo {
+  display: flex;
+  justify-content: center;
+}
+.loginBox .formLogo img {
+  height: 50px;
+  margin: 26px 0;
+}
+.loginBox .signInBtn {
+  margin-top: 25px !important;
+  width: 96%;
+  margin: 0 auto;
+  background: #574DFC;
+  color: white;
+  border: none;
+  padding: 9px 0;
+}
+.loginBox .redirectLink {
+  display: flex;
+  font-weight: 500;
+  color: #574DFC;
+  justify-content: center;
+  border: 2px solid #adb5bd;
+  padding: 7px 0;
+  width: 96%;
+  margin: 12px auto 0 auto;
+  border-radius: 5px;
+}
+.loginBox .redirectLink p {
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.loginBox .redirectLink span {
+  margin-left: 5px;
+  color: gray;
+  display: inline-block;
+}
+.loginBox .redirectLink span a {
+  color: gray !important;
+}
+.loginBox .reserved {
+  text-align: center;
+  margin: 85px 0 0 0;
+  color: gray;
+  letter-spacing: 0px;
+  font-size: 15px;
+}
+.loginBox .flexInline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media (max-width: 1360px) {
+  .formPicture .sliderItem .innerItem h4 {
+    font-size: 30px !important;
+  }
+  .formPicture .sliderItem .innerItem img {
+    height: 500px;
+    top: 0%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sliderItem {
+    height: auto !important;
+    padding: 14px 0px;
+  }
+  .innerItem img {
+    height: 400px !important;
+  }
+}
+@media (max-width: 1099px) {
+  .formPicture .sliderItem {
+    padding: 14px 0px;
+  }
+  .formPicture .sliderItem .innerItem img {
+    height: 324px !important;
+    top: 18%;
+  }
+  .formPicture .sliderItem .indicators_box {
+    top: 0%;
+  }
+}
+@media (max-width: 992px) {
+  .formPicture .sliderItem .innerItem h4 {
+    font-size: 25px !important;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #hiddenSlider {
+    display: none !important;
+  }
+  #fullWidthForm {
+    max-width: unset !important;
+    flex: unset !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .loginBox {
+    height: 100vh;
+    padding: 0 15px;
+  }
+  .loginBox .reserved {
+    margin: 20px 0 0 0;
+    font-size: 13px;
+  }
+  .formLogo img {
+    height: 40px !important;
+    margin: 26px 0;
+  }
+}/*# sourceMappingURL=login.module.css.map */

@@ -1,0 +1,476 @@
+.caseDetailsBox {
+  width: 98%;
+  margin: 100px auto 0 auto;
+  box-shadow: 1px 10px 24px rgba(128, 128, 128, 0.2784313725);
+  z-index: 0;
+  position: relative;
+}
+
+.detailsSection {
+  box-shadow: 4px 10px 28px rgba(128, 128, 128, 0.2705882353);
+  width: 100%;
+  margin: 0px auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.innerTobBox {
+  background: #F9F9F9;
+  display: flex;
+}
+.innerTobBox .userNameBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 37px;
+  padding-top: 30px;
+}
+.innerTobBox .userNameBox span {
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+.innerTobBox .userNameBox p {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.scdUserProBox .scdUserConditionPathBox:hover a {
+  background: rgba(165, 165, 165, 0.4);
+  width: 140px;
+  height: 140px;
+  display: block;
+  position: absolute;
+  top: 0;
+  border-radius: 71px;
+  cursor: pointer;
+}
+.scdUserProBox .scdUserConditionPathBox {
+  margin-left: 55px;
+  position: relative;
+  top: 20px;
+}
+.scdUserProBox .scdUserConditionPathBox img {
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 74px;
+  box-shadow: -2px 3px 10px rgba(128, 128, 128, 0.4509803922);
+  padding: 0;
+  margin: 0;
+  width: 140px;
+  border: 5px solid white;
+}
+.scdUserProBox .scdUserConditionNameBox {
+  margin-left: 55px;
+  position: relative;
+  top: 20px;
+}
+.scdUserProBox .scdUserConditionNameBox span {
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 74px;
+  box-shadow: -2px 3px 10px rgba(128, 128, 128, 0.431372549);
+  padding: 0;
+  margin: 0;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #574DFC;
+  color: white;
+  font-size: 46px;
+  border: 5px solid white;
+}
+
+.innerbottomBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.innerbottomBox .clientBox h5 span {
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-flex !important;
+  text-transform: uppercase;
+}
+.innerbottomBox .clientBox h5 p {
+  color: #DBDBDB;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  margin-left: 6px !important;
+  align-items: unset;
+  text-transform: capitalize;
+}
+.innerbottomBox .clientBoxScd {
+  width: 100% !important;
+}
+.innerbottomBox .pictureBox {
+  width: 100%;
+}
+.innerbottomBox .pictureBox .cnicBox {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin-left: 76px;
+}
+.innerbottomBox .pictureBox .cnicBox img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50px;
+  width: 80px;
+  border-radius: 9px;
+  margin: 0 38px;
+}
+.innerbottomBox .innerClientBoxOnce {
+  margin-top: 20px;
+}
+
+.goalPostSection {
+  margin-top: 50px;
+}
+
+.goalPostTopSection {
+  background: #F9F9F9;
+  position: relative;
+  height: 60px;
+}
+.goalPostTopSection .checkTag {
+  position: absolute;
+  height: 60px;
+  left: 0%;
+  background: white;
+  padding: 5px 30px;
+  border-radius: 0px 20px 0px 0px;
+}
+.goalPostTopSection .checkTag .tabBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  width: 80%;
+  margin: auto;
+}
+.goalPostTopSection .checkTag .tabBox img {
+  height: 30px;
+  display: block;
+}
+.goalPostTopSection .checkTag .tabBox span {
+  position: absolute;
+  background: black;
+  height: 5px;
+  width: 5px;
+  top: 12px;
+  right: 10px;
+  border-radius: 40px;
+}
+.goalPostTopSection .checkTag .tabBox h5 {
+  display: block;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.goalPostData .headGoalPostBox {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.goalPostData .headGoalPostBox span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.goalPostData .headGoalPostBox p {
+  color: gray;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.goalPostData .headGoalPostBox h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+.goalPostData .headGoalPostBox .completedBox {
+  margin-left: 30px;
+}
+
+.table > :not(caption) > * > * {
+  padding: 1.5rem 2.5rem !important;
+}
+
+.goalPostfeilds {
+  width: 96%;
+  margin: auto;
+  display: block;
+}
+.goalPostfeilds table {
+  border: 1px solid rgba(128, 128, 128, 0.2705882353);
+  border-radius: 20px !important;
+  border-collapse: separate;
+}
+.goalPostfeilds table thead tr th {
+  color: #574dfc;
+  padding: 20px;
+}
+.goalPostfeilds table tbody td {
+  padding: 20px;
+  font-size: 13px;
+  border-top-width: 1px !important;
+  border-bottom-width: 0px !important;
+  border-bottom: transparent !important;
+}
+
+.Attachment {
+  width: 96%;
+  margin: auto;
+}
+.Attachment .headAttachment {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+}
+.Attachment .innerAttachment {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.Attachment .innerAttachment .attachmentBox {
+  margin-right: 18px;
+}
+.Attachment .innerAttachment .attachmentBox a {
+  display: inline-block !important;
+}
+.Attachment .innerAttachment .attachmentBox img {
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px dashed #BABABA;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Attachment .innerAttachment .attachmentBox .fileLabel {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.Attachment .filesMess {
+  color: gray;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.remarkSection {
+  width: 96%;
+  margin: 50px auto 0 auto;
+}
+
+.headeRemark {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+}
+.headeRemark .remarksMess {
+  color: gray;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.remarkBox {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.remarkBox h5 {
+  font-size: 15px;
+  margin-top: 30px;
+  padding: 15px 0 0px 17px;
+  position: relative;
+  display: flex;
+}
+.remarkBox h5 .remarkUpdateTime {
+  margin-left: 20px;
+  font-weight: 400;
+  color: gray;
+}
+.remarkBox p {
+  font-size: 15px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 6px;
+  text-transform: lowercase;
+}
+
+.caseTimeLineSec {
+  width: 96%;
+  margin: 60px auto 0 auto;
+}
+.caseTimeLineSec > h5 {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.caseTimeLineBox {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caseTimeLineBox .caseTimeLineFirstBox {
+  width: 15%;
+}
+.caseTimeLineBox .caseTimeLineFirstBox span {
+  font-size: 15px;
+  color: #574DFC;
+}
+.caseTimeLineBox .caseTimeLineScdBox {
+  position: relative;
+  width: 2%;
+}
+.caseTimeLineBox .caseTimeLineScdBox div {
+  position: relative;
+}
+.caseTimeLineBox .caseTimeLineScdBox div b {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #574DFC;
+  position: relative;
+  display: block;
+  left: -4px;
+}
+.caseTimeLineBox .caseTimeLineScdBox div p {
+  padding: 0%;
+  margin: 0%;
+  height: 45px;
+  width: 2px;
+  background: rgba(128, 128, 128, 0.431372549);
+  left: 0.3px;
+  position: absolute;
+  bottom: -55.5px;
+}
+.caseTimeLineBox .caseTimeLineThirdBox {
+  background: hsla(0deg, 0%, 50%, 0.05);
+  padding: 12px 20px;
+  width: 83%;
+  margin-bottom: 10px;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.caseTimeLineBox .caseTimeLineThirdBox::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 6px;
+  left: 6px;
+  border: 1px solid #574DFC;
+}
+.caseTimeLineBox .caseTimeLineThirdBox h4 {
+  font-size: 14px;
+  color: #574DFC;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.caseTimeLineBox .caseTimeLineThirdBox span {
+  display: inline-block !important;
+  font-size: 13px;
+  margin-top: 7px;
+  font-weight: 500;
+}
+.caseTimeLineBox .caseTimeLineThirdBox span li.delete {
+  color: red !important;
+  display: inline-block !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .goalPostTopSection .checkTag {
+    width: auto;
+  }
+  .goalPostTopSection .checkTag .tabBox {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 992px) {
+  .goalPostfeilds {
+    overflow-y: scroll;
+  }
+  .Attachment .innerAttachment .attachmentBox img {
+    height: 80px;
+    width: 80px;
+    padding: 9px;
+  }
+  .caseTimeLineBox {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex-direction: column;
+  }
+  .caseTimeLineBox .caseTimeLineFirstBox {
+    width: auto !important;
+  }
+  .caseTimeLineBox .caseTimeLineScdBox div b {
+    top: 15px;
+  }
+  .caseTimeLineBox .caseTimeLineScdBox div p {
+    height: 37px !important;
+    bottom: -56px !important;
+  }
+  .caseTimeLineBox .caseTimeLineThirdBox {
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Attachment .innerAttachment .attachmentBox img {
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pictureBox .cnicBox {
+    justify-content: left !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+  .scdUserProBox .scdUserConditionPathBox img {
+    height: 100px;
+    width: 100px;
+  }
+  .scdUserProBox .scdUserConditionNameBox span {
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+  }
+  .innerTobBox .userNameBox span {
+    font-size: 15px;
+  }
+  .innerbottomBox .innerClientBoxOnce {
+    display: flex;
+    flex-direction: column;
+  }
+  .innerbottomBox .innerClientBoxOnce #marginTop {
+    margin-top: 5px !important;
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .scdUserProBox .scdUserConditionPathBox {
+    margin-left: 15px;
+  }
+  .scdUserProBox .scdUserConditionNameBox {
+    margin-left: 15px;
+  }
+  .innerTobBox .userNameBox {
+    margin-left: 10px;
+    padding-top: 45px;
+  }
+  .innerTobBox .userNameBox span {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=checkDetails.module.css.map */
